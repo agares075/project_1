@@ -1,0 +1,29 @@
+/* ---------- About Page ---------- */
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 276px;
+    text-align: center;
+
+}
+.myprofile {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    gap: 30px;                  
+    margin: 40px auto;        
+}
+
+.myprofile img {
+    width: 200px;                
+    height: 200px;            
+    object-fit: cover;           
+    border-radius: 50%;          
+    border: 5px solid #D9B99B;   
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+    transition: transform 0.3s;
+}
+
+.myprofile img:hover {
+    transform: scale(1.05);     
+}

@@ -1,0 +1,259 @@
+.banner {
+    text-align: center;
+    padding: 150px 20px;
+    background-image: url("IMG_9042.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #FADCD9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.banner h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e9993e;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Menu Highlight on Homepage ---------- */
+.menu-highlight {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background-color: #fff8f5;
+    border-radius: 15px;
+}
+
+.menu-highlight h1 {
+    text-align: center;
+    color: #A0522D;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-highlight .menu-itemsIn_menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-highlight .itemIn_menu {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 320px;
+}
+
+.menu-highlight .itemIn_menu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ ปรับให้รูปภาพไม่ใหญ่เกิน */
+.menu-highlight .itemIn_menu img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid #D9B99B;
+}
+
+/* ชื่อและราคาของสินค้า */
+.menu-highlight .itemIn_menu h3 {
+    margin: 10px 0 8px;
+    color: #5C4033;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.menu-highlight .itemIn_menu p {
+    color: #A0522D;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 8px 0 15px;
+}
+
+/* ✅ ปรับปุ่มให้เหมือนระบบหลัก */
+.menu-highlight .itemIn_menu button {
+    background-color: #D9B99B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    width: 120px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.menu-highlight .itemIn_menu button:hover {
+    background-color: #A0522D;
+}
+
+/* ปุ่ม "ดูเมนูทั้งหมด" */
+.menu-highlight .btn {
+    background-color: #D9B99B;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-highlight .btn:hover {
+    background-color: #A0522D;
+}
+
+/* ---------- Promotions Section - ชิดซ้าย ---------- */
+.promotions {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    text-align: left; /* ชิดซ้าย */
+}
+
+.promotions h1 {
+    text-align: left; /* ชิดซ้าย */
+    color: #A0522D;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.promotions ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* ชิดซ้าย */
+}
+
+.promotions li {
+    background-color: #FADCD9;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: left; /* ชิดซ้าย */
+    font-size: 1.1rem;
+    color: #5C4033;
+    font-weight: 500;
+}
+
+.promotions .btn {
+    text-align: left; /* ชิดซ้าย */
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* ---------- Testimonials Section - ชิดซ้าย ---------- */
+.testimonials {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    text-align: left; /* ชิดซ้าย */
+}
+
+.testimonials h1 {
+    text-align: left; /* ชิดซ้าย */
+    color: #A0522D;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.testimonials .reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left; /* ชิดซ้าย */
+}
+
+.testimonials blockquote {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    margin: 0;
+    text-align: left; /* ชิดซ้าย */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid #D9B99B;
+}
+
+/* ---------- Quick Links Section - ชิดซ้าย ---------- */
+.quick-links {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    text-align: left; /* ชิดซ้าย */
+}
+
+.quick-links h1 {
+    text-align: left; /* ชิดซ้าย */
+    color: #A0522D;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.quick-links .links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start; /* ชิดซ้าย */
+    flex-wrap: wrap;
+}
+
+.quick-links .btn {
+    text-align: center;
+    display: inline-block;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .menu-highlight {
+        padding: 20px;
+    }
+
+    .menu-highlight .menu-itemsIn_menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .menu-highlight .itemIn_menu {
+        padding: 15px;
+        min-height: 280px;
+    }
+
+    .menu-highlight .itemIn_menu img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Responsive สำหรับส่วนที่ชิดซ้าย */
+    .promotions,
+    .testimonials,
+    .quick-links {
+        padding: 20px;
+    }
+
+    .quick-links .links {
+        flex-direction: column;
+        align-items: flex-start; /* ชิดซ้ายในมือถือ */
+    }
+}

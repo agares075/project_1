@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bakery House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍰 Bakery House</div>
+            
+            <!-- เพิ่ม Hamburger Menu -->
+            <input type="checkbox" id="hamburger-toggle" />
+            <label for="hamburger-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>ติดต่อเรา</h1>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">ชื่อ:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">อีเมล:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ข้อความ:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                </form>
+                
+                <div class="map-container">
+                    <h2>ที่ตั้งร้าน</h2>
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.715837216251!2d100.5012673153336!3d13.756290801353142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2995fefad5d4f%3A0x5b63b6b1b3b3b3b3!2sBakery%20House!5e0!3m2!1sth!2sth!4v1620000000000!5m2!1sth!2sth" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Bakery House | Fresh and hot, straight from the oven!</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <img src="Facebook_Logo_(2019).png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <img src="Instagram_logo_2022.svg.webp" alt="Instagram" />
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

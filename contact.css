@@ -1,0 +1,127 @@
+/* ---------- Contact Page ---------- */
+.contact-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #A0522D;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* ---------- Contact Form ---------- */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #5C4033;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #D9B99B;
+    border-radius: 8px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #A0522D;
+}
+
+.submit-btn {
+    background-color: #D9B99B;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #A0522D;
+}
+
+/* ---------- Map Section ---------- */
+.map-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.map-container h2 {
+    color: #A0522D;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    .contact-section h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-form,
+    .map-container {
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+    }
+}

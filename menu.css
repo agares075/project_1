@@ -1,0 +1,48 @@
+/* ---------- Menu Page ---------- */
+.menu-list {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.menu-items {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-items .item {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-items img {
+    width: 160px;        
+    height: 160px;       
+    object-fit: cover;   
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;      
+}
+
+
+.menu-items h3 {
+    margin: 10px 0 5px;
+}
+
+.menu-items button {
+    background-color: #D9B99B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-items button:hover {
+    background-color: #A0522D;
+}

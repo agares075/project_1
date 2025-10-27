@@ -1,0 +1,35 @@
+/* ---------- Promotions Page ---------- */
+.promotions {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.promotions h1 {
+    text-align: center;
+    color: #A0522D;
+    margin-bottom: 20px;
+}
+
+.promotions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.promotions li {
+    background: #FADCD9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #5C4033;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.promotions li:hover {
+    transform: scale(1.03);
+}

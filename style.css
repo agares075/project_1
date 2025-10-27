@@ -1,0 +1,172 @@
+/* ---------- ฟอนต์และพื้นหลัง ---------- */
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F0; 
+    color: #5C4033; 
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: #D9B99B;
+    padding: 30px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #A0522D;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5C4033;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #A0522D;
+}
+
+/* ---------- Hamburger แบบ checkbox ---------- */
+#hamburger-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #5C4033;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger transform เมื่อถูกเลือก */
+#hamburger-toggle:checked + .hamburger div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hamburger-toggle:checked + .hamburger div:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-toggle:checked + .hamburger div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* แสดง nav-links เมื่อ checkbox ถูกเลือก */
+#hamburger-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D9B99B;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #A0522D; 
+}
+
+/* ---------- Section Title ---------- */
+main h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+/* ---------- Main Layout ---------- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #D9B99B;
+    margin-top: 20px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer .social-icons img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;  
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+footer .social-icons img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;  
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background: #FFF8F0;
+        width: 100%;
+        display: none;
+        padding: 10px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+}
